@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+} 
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+.about2 {
+    font-size: calc(1em + 1vw);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts2 {
+    width: 50%;
+}
+.flexportfolio{
+    display: flex;
+    flex-direction: column;
+}
+.forimg {
+    border: 1px solid black;
+    display: flex;
+}
+
+.forimg2 {
+    border: 1px solid black;
+    display: flex;;
+}
+.image1 {
+    height: auto;
+    width: 50%;
+}
+.image2{
+    height: auto;
+    width: 50%;
+}
+.image3 {
+    height: auto;
+    width: 50%;
+}
+.image4 {
+    height: auto;
+    width: 50%;
+}
+.quizapps{
+    width: 100%;
+}
+.quizz{
+    height: auto;
+    width: 100%;
+}
+.skillsbox {
+    display: flex;
+    flex-direction: column;
+}
+.skills1 {
+    height: auto;
+    width: 50%;
+}
+.video {
+    font-size: calc(1em + 1vw);
+}
