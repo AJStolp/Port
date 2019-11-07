@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'/>
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Ubuntu&display=swap" rel="stylesheet"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anthony J. Stolp Portfolio</title>
 </head>
@@ -12,23 +13,29 @@
     <main>
         <header>
             <nav class='navigation'>
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='about.html'>About</a></li>
-                    <li><a href='skills.html'>Skills</a></li>
-                    <li><a href='portfolio.html'>Portfolio</a></li>
-                    <li><a href='contact.html'>Contact</a></li>
+                    <div class="menu-toggle">
+                        <div class="circle icon"></div>
+                            <span class='line top'></span>
+                            <span class='line middle'></span>
+                            <span class='line bottom'></span>
+                    </div>
+                <ul class='open desktop'>
+                    <li><a href='index.html' class='links'>Home</a></li>
+                    <li><a href='about.html' class='links'>About</a></li>
+                    <li><a href='skills.html' class='links'>Skills</a></li>
+                    <li><a href='portfolio.html' class='links'>Portfolio</a></li>
+                    <li><a href='contact.html' class='links'>Contact</a></li>
                 </ul>
             </nav>
         </header>
         <section class='welcome'>
-        <h1>HELLO</h1>
+        <h1 class='hello'>HELLO</h1>
             <div class='forimg'>
                 <img src='IMG/PersonalPhotoCompressed.jpg' class='personal' alt='personal image'>
             </div>
         </section>
         <section>
-            <p>VIEW SOME OF MY RECENT WORK</p>
+            <p class='welcome'>VIEW SOME OF MY RECENT WORK</p>
                 <div class='forimg2'>
                 <img src='IMG/quizAppPhoto.png' class='quizapps'>
             </div>
@@ -39,5 +46,6 @@
 
     </main>
     <script src='JS/portfolio.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>

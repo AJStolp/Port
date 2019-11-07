@@ -16,19 +16,28 @@
 .contacts2 {
     width: 50%;
 }
-.flexportfolio{
+.circle {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.flexportfolio {
     display: flex;
     flex-direction: column;
 }
 .forimg {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
+    
 }
 
 .forimg2 {
     border: 1px solid black;
-    display: flex;;
+    display: flex;
 }
+/* .hello {
+    fonst
+} */
 .image1 {
     height: auto;
     width: 50%;
@@ -45,6 +54,41 @@
     height: auto;
     width: 50%;
 }
+.line {
+    height: 12px;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+.menu-toggle {
+    background: #081B33;
+    border-radius: 500px;
+    display: inline-block;
+    margin: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+.navigation {
+    /* background-color: #081B33; */
+    padding: 25px;
+    text-align: right;
+    /* width: 100%; */
+}
+.navigation li{
+    display: flex;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+    /* display: inline; */
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .quizapps{
     width: 100%;
 }
@@ -60,6 +104,9 @@
     height: auto;
     width: 50%;
 }
+/* .welcome{
+    color: #353C51;
+} */
 .video {
     font-size: calc(1em + 1vw);
 }
