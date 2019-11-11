@@ -1,6 +1,7 @@
 {
     "liveServer.settings.port": 5501,
     "cSpell.ignoreWords": [
+        "aboutp",
         "flexportfolio",
         "forimg",
         "menu",
@@ -8,6 +9,7 @@
         "quizz",
         "skillsbox",
         "stolp",
+        "thinkful",
         "toggle"
     ]
 }

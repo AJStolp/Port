@@ -9,30 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Ubuntu&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<main>
 <body>
         <header>
                 <nav class='navigation'>
                         <ul>
                             <li><a href='index.html' class='links'>Home</a></li>
                             <li><a href='about.html' class='links'>About</a></li>
-                            <li><a href='skills.html' class='links'>Skills</a></li>
                             <li><a href='portfolio.html' class='links'>Portfolio</a></li>
                             <li><a href='contact.html' class='links'>Contact</a></li>
                         </ul>
                     </nav>
             </header>
-    <div class='flexportfolio'>
-    <img src='IMG/quizAppPhoto.png' class='quizz'>
-    <a href='https://ajstolp.github.io/QuizAppGBP/' target="_blank">QuizApp Green Bay Packers</a>
-    <p class='video'>This was my first project utilizing HTML, CSS, and jQuery. It is a quiz to test you knowledge on the GREATEST football team to exist</p>
-    <video controls>
-        <source src="Assets/XboxPromo.mp4" type="video/mp4">
-    </video>
-    <p class='video'>I recorded, narrated, and edited this video in Adobe Premiere Pro.</p>
-</div>
+
+<main class='main-portfolio'>
+    <article class='portfolio'>
+        <img src='IMG/quizAppPhoto.png'>
+        <a href='https://ajstolp.github.io/QuizAppGBP/' target="_blank">QuizApp Green Bay Packers</a>
+        <p>This was my first project utilizing HTML, CSS, and jQuery. It is a quiz to test you knowledge on the GREATEST football team to exist</p>
+    </article>
+    <div class='portfolio video'>
+            <iframe src="https://www.youtube.com/embed/anXW0VOadBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>I recorded, narrated, and edited this video in Adobe Premiere Pro.</p>
+    </div>
 </main>
-<script src='JS/portfolio.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
-</html>
