@@ -4,6 +4,51 @@
 body {
     margin: 0;
 }
+/* NAVIGATION STYLINGS */
+.navigation {
+    background-color: #081B33;
+}/*all screen*/
+
+.navigation ul {
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+} /*all screen*/
+
+.navigation li {
+    padding: 20px;
+}/*all screen*/
+/*--------------------------------------*/
+
+/* HOME */
+.personal {
+    border-radius: 40%;
+    height: 100%;
+    width: 20%;
+}
+.quizapps{
+    width: 100%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    /* background: linear-gradient(to right, #506680 50%, white 0%); */
+}
+.viewWork {
+    text-align: center;
+}
+.hello {
+    align-self: center;
+} 
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+/*--------------------------------------*/
+
 /* ABOUT */
 .me {
    /* display: block; */
@@ -16,13 +61,15 @@ body {
 }
 .main-about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-gap: 0.5rem;
 }
 /*--------------------------------------*/
-/*PORTFOLIO*/
+/* PORTFOLIO */
 .main-portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
 }
 .video {
@@ -50,57 +97,21 @@ body {
     width: 100%;
 }
 /*---------------------------------------*/
-.contacts {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
+
+/* CONTACT */
+.main-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-gap: 1rem;
 }
 .contacts2 {
-    width: 50%;
+    object-fit: cover;
+    width:100%;
 }
-.hello {
-    align-self: center;
-} /*home screen*/
 
-.links {
-    text-decoration: none;
-    color: white;
-}/*all screen*/
+/*---------------------------------------*/
 
-/*NAVIGATION STYLINGS*/
-.navigation {
-    background-color: #081B33;
-}/*all screen*/
-
-.navigation ul {
-    list-style-type: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0;
-} /*all screen*/
-
-.navigation li {
-    padding: 20px;
-}/*all screen*/
-/*--------------------------------------*/
-
-.personal {
-    border-radius: 40%;
-    height: 100%;
-    width: 20%;
-}
-.quizapps{
-    width: 100%;
-}/*home screen*/
-
-.welcome {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    /* background: linear-gradient(to right, #506680 50%, white 0%); */
-}/*home screen*/
-.viewWork {
-    text-align: center;
-}
+/* MEDIA QUERIES */
 @media screen and (min-width: 1000px) {
     .navigation li {
         display: inline;
@@ -108,5 +119,12 @@ body {
     .navigation ul {
         text-align: right;
         padding: 20px;
+    }
+    .main-portfolio {
+        margin: 10px;
+    }
+    .contacts2 {
+        object-fit: cover;
+        width:50%;
     }
 }
