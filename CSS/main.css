@@ -71,6 +71,7 @@ body {
     /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
+    margin: 0.5rem;
 }
 .video {
     overflow: hidden;
@@ -80,7 +81,7 @@ body {
    
   .video iframe {
      border: 0;
-     height: 100%;
+     height: 75%;
      left: 0;
      position: absolute;
      top: 0;
