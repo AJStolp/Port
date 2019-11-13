@@ -4,6 +4,20 @@
 body {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    text-decoration: underline;
+    color: teal;
+    box-shadow: inset;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px 4px teal;
+  }
+  .a1 {
+    font-family: 'Cuprum', sans-serif;
+  }
 /* NAVIGATION STYLINGS */
 .navigation {
     background-color: #081B33;
@@ -13,8 +27,11 @@ body {
     list-style-type: none;
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
+    margin-bottom: 0;
 } /*all screen*/
-
+.links:hover {
+    box-shadow: 2px 4px 10px 4px white;
+}
 .navigation li {
     padding: 20px;
 }/*all screen*/
@@ -26,6 +43,11 @@ body {
     height: 100%;
     width: 20%;
 }
+.p1welcome {
+    line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
 .quizapps{
     width: 100%;
 }
@@ -34,35 +56,52 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    /* background: linear-gradient(to right, #506680 50%, white 0%); */
+    background: linear-gradient(to left, rgba(255,0,0,0), #506680);
 }
 .viewWork {
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.viewRecent > p a {
+    border: 2px solid black;
+    padding: 12px 16px;
+    margin: 10px;
 }
 .hello {
     align-self: center;
+    font-size: 2.5rem;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    color: orange;
 } 
 
 .links {
-    text-decoration: none;
     color: white;
 }
 /*--------------------------------------*/
 
 /* ABOUT */
+.main-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 1rem;
+    line-height: 1.5rem;
+    padding-top: 12px;
+    margin: 12px;
+}
 .me {
-   /* display: block; */
    width: 100%;
-   box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06);
 }
 .me > img {
     object-fit: cover;
-    width: 100%;
+    width: 75%;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
-.main-about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-    grid-gap: 0.5rem;
+.me > img:hover {
+    box-shadow: 2px 4px 10px 4px #046B99;
+}
+.me > p {
+    font-family: 'Montserrat', sans-serif;
 }
 /*--------------------------------------*/
 /* PORTFOLIO */
@@ -71,6 +110,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
     margin: 0.5rem;
+}
+.portfolio > p {
+    font-family: 'Montserrat', sans-serif;
 }
 .video {
     overflow: hidden;
@@ -96,6 +138,13 @@ body {
     width: 100%;
     height: 75%;
 }
+.portfolio > p {
+    line-height: 1.5rem;
+}
+.portfolio > a {
+    border: 2px solid black;
+    padding: 12px 16px;
+}
 /*---------------------------------------*/
 
 /* CONTACT */
@@ -103,10 +152,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     grid-gap: 1rem;
+    justify-items: center;
 }
 .contacts2 {
     object-fit: cover;
-    width:100%;
 }
 
 /*---------------------------------------*/
