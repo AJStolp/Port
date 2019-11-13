@@ -1,3 +1,4 @@
+/* GLOBAL */
 *{
     box-sizing: border-box;
 } 
@@ -9,25 +10,27 @@ a {
     text-transform: uppercase;
 }
 a:hover {
-    text-decoration: underline;
-    color: teal;
     box-shadow: inset;
-    cursor: pointer;
     box-shadow: 2px 4px 10px 4px teal;
+    color: teal;
+    cursor: pointer;
+    text-decoration: underline;
   }
-  .a1 {
+.a1 {
     font-family: 'Cuprum', sans-serif;
   }
+/*--------------------------------------*/
+
 /* NAVIGATION STYLINGS */
 .navigation {
     background-color: #081B33;
 }/*all screen*/
 
 .navigation ul {
-    list-style-type: none;
     font-family: 'Ubuntu', sans-serif;
-    padding: 0;
+    list-style-type: none;
     margin-bottom: 0;
+    padding: 0;
 } /*all screen*/
 .links:hover {
     box-shadow: 2px 4px 10px 4px white;
@@ -44,8 +47,8 @@ a:hover {
     width: 20%;
 }
 .p1welcome {
-    line-height: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
     margin: 10px;
 }
 .quizapps{
@@ -53,26 +56,25 @@ a:hover {
 }
 
 .welcome {
+    background: linear-gradient(to left, rgba(255,0,0,0), #506680);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    background: linear-gradient(to left, rgba(255,0,0,0), #506680);
 }
 .viewWork {
-    text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 .viewRecent > p a {
     border: 2px solid black;
-    padding: 12px 16px;
     margin: 10px;
+    padding: 12px 16px;
 }
 .hello {
     align-self: center;
-    font-size: 2.5rem;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Ubuntu', sans-serif;
     color: orange;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
 } 
 
 .links {
@@ -86,16 +88,16 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     grid-gap: 1rem;
     line-height: 1.5rem;
-    padding-top: 12px;
     margin: 12px;
+    padding-top: 12px;
 }
 .me {
    width: 100%;
 }
 .me > img {
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
     object-fit: cover;
     width: 75%;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
 .me > img:hover {
     box-shadow: 2px 4px 10px 4px #046B99;
@@ -135,8 +137,8 @@ a:hover {
   }
 
 .portfolio > img {
-    width: 100%;
     height: 75%;
+    width: 100%;
 }
 .portfolio > p {
     line-height: 1.5rem;
@@ -150,14 +152,10 @@ a:hover {
 /* CONTACT */
 .main-contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    justify-items: center;
+    margin-top: 12px;
 }
-.contacts2 {
-    object-fit: cover;
-}
-
 /*---------------------------------------*/
 
 /* MEDIA QUERIES */
