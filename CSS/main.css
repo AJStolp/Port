@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 } 
+html {
+    height: 100%;
+}
 body {
     /* background-color:rgb(188, 194, 211); */
     margin: 0;
@@ -163,10 +166,9 @@ a:hover {
 /* CONTACT */
 .main-contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 1rem;
     margin-top: 12px;
-    justify-items: center;
 }
 /*---------------------------------------*/
 
@@ -183,8 +185,3 @@ a:hover {
         margin: 10px;
     }
 }
-/* @media screen and (min-width: 730px) {
-    .main-portfolio {
-        display: flex;
-        flex-direction: row;
-    } */
