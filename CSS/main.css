@@ -3,6 +3,7 @@
     box-sizing: border-box;
 } 
 body {
+    /* background-color:rgb(188, 194, 211); */
     margin: 0;
 }
 a {
@@ -10,34 +11,36 @@ a {
     text-transform: uppercase;
 }
 a:hover {
-    box-shadow: inset;
-    box-shadow: 2px 4px 10px 4px teal;
-    color: teal;
+    color: #00CFFF;
     cursor: pointer;
     text-decoration: underline;
   }
+  .a1:hover {
+    box-shadow: 2px 4px 10px 4px #046B99;
+  }
 .a1 {
     font-family: 'Cuprum', sans-serif;
+    color: rgb(89, 0, 255);
+    cursor: pointer;
   }
 /*--------------------------------------*/
 
 /* NAVIGATION STYLINGS */
 .navigation {
     background-color: #081B33;
-}/*all screen*/
+}
 
 .navigation ul {
     font-family: 'Ubuntu', sans-serif;
     list-style-type: none;
     margin-bottom: 0;
+    margin-top: 0;
     padding: 0;
-} /*all screen*/
-.links:hover {
-    box-shadow: 2px 4px 10px 4px white;
-}
+} 
+
 .navigation li {
     padding: 20px;
-}/*all screen*/
+}
 /*--------------------------------------*/
 
 /* HOME */
@@ -52,6 +55,7 @@ a:hover {
     margin: 10px;
 }
 .quizapps{
+    max-width: 75%;
     width: 100%;
 }
 
@@ -63,6 +67,10 @@ a:hover {
 }
 .viewWork {
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+.viewRecent {
     text-align: center;
 }
 .viewRecent > p a {
@@ -85,11 +93,12 @@ a:hover {
 /* ABOUT */
 .main-about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     line-height: 1.5rem;
     margin: 12px;
     padding-top: 12px;
+    /* max-width: 75%; */
 }
 .me {
    width: 100%;
@@ -97,7 +106,9 @@ a:hover {
 .me > img {
     box-shadow:0 0 20px rgba(0,0,0,0.8);
     object-fit: cover;
+    max-width: 50%;
     width: 75%;
+    text-align: center;
 }
 .me > img:hover {
     box-shadow: 2px 4px 10px 4px #046B99;
@@ -152,9 +163,10 @@ a:hover {
 /* CONTACT */
 .main-contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 1rem;
     margin-top: 12px;
+    justify-items: center;
 }
 /*---------------------------------------*/
 
@@ -170,8 +182,9 @@ a:hover {
     .main-portfolio {
         margin: 10px;
     }
-    .contacts2 {
-        object-fit: cover;
-        width:50%;
-    }
 }
+/* @media screen and (min-width: 730px) {
+    .main-portfolio {
+        display: flex;
+        flex-direction: row;
+    } */
