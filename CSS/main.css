@@ -38,7 +38,6 @@ a:hover {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
-    position: initial;
     width: 100%;
     z-index: 3;
   }
@@ -218,7 +217,7 @@ a:hover {
 /* ABOUT */
 .main-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
     line-height: 1.5rem;
     padding-top: 90px;
@@ -240,29 +239,24 @@ a:hover {
 .me > p {
     font-family: 'Montserrat', sans-serif;
 }
-/*--------------------------------------*/
-/* PORTFOLIO */
-@media(min-width: 48em) {
-    .main-port {
+@media(min-width: 48em){
+    .main-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 1rem;
         line-height: 1.5rem;
         padding-top: 90px;
-        margin: 0 25px;
+        margin-left: 45px;
     }
-    .article-port {
-        width: 100%;
-        box-shadow:0 0 20px rgba(0,0,0,0.8);
-    }
-   
 }
+/*--------------------------------------*/
+/* PORTFOLIO */
 .main-port {
     margin: initial;
 }
 .article-port {
     padding: 50px 10px 0 10px;
-    margin-top: 75px;
+    margin-top: 0;
 }
 .article-port > img {
     max-width: 100%;
@@ -271,9 +265,37 @@ video {
     object-fit: cover;
     max-width: 100%;
 }
+@media(min-width: 48em) {
+    .port {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(18.75em, 1fr));
+        grid-gap: 1rem;
+        line-height: 1.5rem;
+        padding-top: 90px;
+        margin-left: 45px;
+    }
+    .article-port {
+        width: 100%;
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        object-fit: cover;
+    }
+   
+}
 /*---------------------------------------*/
 
 /* CONTACT */
+.init{
+    position: initial;
+}
+.contacts {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 45px;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    margin: 100px 25px;
+}
 @media (min-width: 87.5em){
     .main-contact {
         display: grid;
@@ -299,14 +321,5 @@ video {
         padding: 0 45px;
         box-shadow:0 0 20px rgba(0,0,0,0.8);
     }
-}
-.contacts {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-items: center;
-    align-items: center;
-    padding: 45px;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    margin: 100px 25px;
 }
 /*---------------------------------------*/
