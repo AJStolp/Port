@@ -9,34 +9,34 @@ body {
     /* background-color:rgb(188, 194, 211); */
     margin: 0;
 }
-a {
+/* a {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-}
-a:hover {
+} */
+/* a:hover {
     color: #00CFFF;
     cursor: pointer;
     text-decoration: underline;
   }
   .a1:hover {
     box-shadow: 2px 4px 10px 4px #046B99;
-  }
-.a1 {
+  } */
+/* .a1 {
     font-family: 'Cuprum', sans-serif;
     color: rgb(89, 0, 255);
     cursor: pointer;
-  }
-  .menu li > a:hover {
+  } */
+  /* .menu li > a:hover {
     text-decoration: underline;
-  }
+  } */
 /*--------------------------------------*/
 /* HAMBURGER MENU */
 /* header */
 
 .header {
     background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -183,7 +183,7 @@ a:hover {
 }
 
 .welcome {
-    background: linear-gradient(to left, rgba(255,0,0,0), #506680);
+    /* background: linear-gradient(to left, rgba(255,0,0,0), #506680); */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -204,7 +204,7 @@ a:hover {
 }
 .hello {
     align-self: center;
-    color: orange;
+    /* color: orange; */
     font-size: 3em;
     font-family: 'Ubuntu', sans-serif;
 } 
@@ -233,9 +233,9 @@ a:hover {
     width: 75%;
     text-align: center;
 }
-.me > img:hover {
+/* .me > img:hover {
     box-shadow: 2px 4px 10px 4px #046B99;
-}
+} */
 .me > p {
     font-family: 'Montserrat', sans-serif;
 }
