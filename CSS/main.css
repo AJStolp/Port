@@ -17,10 +17,9 @@ a {
 a:hover {
     color: #00CFFF;
     cursor: pointer;
-    text-decoration: underline;
   }
   .a1:hover {
-    box-shadow: 2px 4px 10px 4px #046B99;
+    color: orange;
   }
 .a1 {
     font-family: 'Cuprum', sans-serif;
@@ -49,6 +48,7 @@ a:hover {
     overflow: hidden;
     background-color: #fff;
     text-align: right;
+    font-family: 'Ubuntu', sans-serif;
   }
   
   .header li a {
@@ -69,6 +69,11 @@ a:hover {
     font-size: 1.5em;
     padding: 15px 20px;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(121, 26, 121);
+  }
+  .header .logo:hover {
+    color: #00CFFF;
   }
   
   /* menu */
@@ -254,6 +259,9 @@ a:hover {
 .main-port {
     margin: initial;
 }
+.article-port:hover {
+    box-shadow: 2px 4px 10px 4px #046B99; 
+}
 .article-port {
     padding: 50px 10px 0 10px;
     margin-top: 0;
@@ -295,6 +303,9 @@ video {
     padding: 45px;
     box-shadow:0 0 20px rgba(0,0,0,0.8);
     margin: 100px 25px;
+}
+.contacts:hover {
+    box-shadow: 2px 4px 10px 4px #046B99;
 }
 .contacts2 {
     padding-top: 15px;
