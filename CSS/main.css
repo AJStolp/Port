@@ -265,6 +265,7 @@ a:hover {
 .article-port {
     padding: 50px 10px 0 10px;
     margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .article-port > img {
     max-width: 100%;
