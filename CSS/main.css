@@ -298,6 +298,7 @@ div > img {
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
   text-align-last: center;
+  border: 3px solid purple;
 }
 .article-port > img {
   max-width: 100%;
@@ -325,6 +326,9 @@ video {
 /*---------------------------------------*/
 
 /* CONTACT */
+.h1-contact {
+  text-align: center;
+}
 .init{
   position: initial;
 }
@@ -344,6 +348,9 @@ video {
 .contacts2 {
   max-width: 50%;
   padding-top: 15px;
+}
+.span1 {
+  color: red;
 }
 @media (min-width: 87.5em){
   .main-contact {
