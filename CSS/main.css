@@ -23,7 +23,7 @@ a:hover {
 }
 .a1 {
   font-family: 'Cuprum', sans-serif;
-  color: rgb(89, 0, 255);
+  color: purple;
   cursor: pointer;
 }
 .menu li > a:hover {
@@ -188,7 +188,7 @@ a:hover {
 }
 
 .welcome {
-  background: linear-gradient(to left, rgba(255,0,0,0), #506680);
+  background: linear-gradient(50deg, #FFFFFF, #FFFFFF, #2980B9);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -228,21 +228,44 @@ a:hover {
   padding-top: 90px;
   margin-left: 45px;
 }
+.about-grid2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  line-height: 1.5rem;
+  padding-top: 90px;
+  margin-left: 45px;
+}
+div > img {
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  object-fit: cover;
+  max-width: 50%;
+  width: 75%;
+}
+.heads2 {
+  text-align: center;
+  text-decoration: underline;
+  color: purple;
+}
 .me {
- width: 100%;
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 .me > img {
   box-shadow:0 0 20px rgba(0,0,0,0.8);
   object-fit: cover;
   max-width: 50%;
   width: 75%;
-  text-align: center;
+  border: 3px solid purple;
 }
 .me > img:hover {
   box-shadow: 2px 4px 10px 4px #046B99;
 }
 .me > p {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 @media(min-width: 48em){
   .main-about {
@@ -253,6 +276,14 @@ a:hover {
       padding-top: 90px;
       margin-left: 45px;
   }
+  .about-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    line-height: 1.5rem;
+    padding-top: 90px;
+    margin-left: 45px;
+}
 }
 /*--------------------------------------*/
 /* PORTFOLIO */
@@ -266,6 +297,7 @@ a:hover {
   padding: 50px 10px 0 10px;
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
+  text-align-last: center;
 }
 .article-port > img {
   max-width: 100%;
@@ -296,6 +328,7 @@ video {
 .init{
   position: initial;
 }
+
 .contacts {
   display: grid;
   grid-template-columns: 100%;
@@ -309,6 +342,7 @@ video {
   box-shadow: 2px 4px 10px 4px #046B99;
 }
 .contacts2 {
+  max-width: 50%;
   padding-top: 15px;
 }
 @media (min-width: 87.5em){
