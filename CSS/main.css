@@ -203,9 +203,10 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5rem;
   margin: 10px;
+  text-align: center;
 }
 .quizapps{
-  max-width: 75%;
+  max-width: 95%;
   width: 100%;
 }
 
@@ -291,6 +292,7 @@ div > img {
 .me > p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  max-width: 65%;
 }
 @media(min-width: 48em){
   .main-about {
@@ -308,7 +310,12 @@ div > img {
     line-height: 1.5rem;
     padding-top: 90px;
     margin-left: 45px;
-}
+  }
+  .me > p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    max-width: 55%;
+  }
 }
 /*--------------------------------------*/
 /* PORTFOLIO */
