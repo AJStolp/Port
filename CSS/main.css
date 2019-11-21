@@ -66,8 +66,8 @@ a:hover {
 .header .logo {
   display: block;
   float: left;
-  font-size: 1.5em;
-  padding: 15px 20px;
+  font-size: 1.2em;
+  padding: 18px 20px;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   color: rgb(121, 26, 121);
@@ -210,7 +210,7 @@ a:hover {
 }
 
 .welcome {
-  background: linear-gradient(50deg, #FFFFFF, #FFFFFF, #2980B9);
+  background: linear-gradient(70deg, #FFFFFF, #FFFFFF, #2980B9);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -230,13 +230,17 @@ a:hover {
   padding: 12px 16px;
 }
 .hello {
+  border: 1px solid black;
   align-self: center;
-  color: orange;
-  font-size: 3em;
+  color: purple;
+  font-size: 3vw;
   font-family: 'Ubuntu', sans-serif;
 } 
 
 .links {
+  color: white;
+}
+.span1home {
   color: white;
 }
 /*--------------------------------------*/
