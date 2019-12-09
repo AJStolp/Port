@@ -29,6 +29,12 @@ a:hover {
 .menu li > a:hover {
   text-decoration: underline;
 }
+.homeLink {
+  text-align: center;
+}
+.a2 {
+  text-decoration: underline;
+}
 /*--------------------------------------*/
 /* HAMBURGER MENU */
 /* header */
