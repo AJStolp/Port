@@ -108,7 +108,9 @@ a:hover {
   transition: background .2s ease-out;
   width: 18px;
 }
-
+.navicon {
+  color: transparent;
+}
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
