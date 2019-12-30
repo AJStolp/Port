@@ -20,7 +20,7 @@ a:hover {
 }
 .a1 {
   font-family: 'Ubuntu', sans-serif;
-  color: rgb(49, 160, 211);
+  /* color: rgb(49, 160, 211); */
   cursor: pointer;
   transition: .3s;
 }
