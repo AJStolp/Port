@@ -202,7 +202,7 @@ a:hover {
 .hello {
   align-self: center;
   color: purple;
-  font-size: 3vw;
+  font-size: 4vw;
   font-family: 'Ubuntu', sans-serif;
 } 
 .homeLink {
@@ -349,6 +349,9 @@ video {
   }
 }
 @media (min-width: 48em){
+  .hello {
+    font-size: 3vw;
+  }
   .main-contact {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
