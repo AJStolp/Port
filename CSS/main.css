@@ -24,12 +24,20 @@ a:hover {
   cursor: pointer;
   transition: .3s;
 }
-.a1:hover {
+.a3 {
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+  transition: .3s;
+}
+.a3:hover {
+  color: orange;
+}
+a.a1:hover {
   display: inline-block;
   color: orange;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
+
 .a2 {
   text-decoration: underline;
 }
@@ -325,7 +333,7 @@ video {
 }
 
 .contacts2 {
-  max-width: 50%;
+  max-width: 40%;
   padding-top: 15px;
 }
 .span1 {
@@ -349,6 +357,7 @@ video {
   }
 }
 @media (min-width: 48em){
+ 
   .hello {
     font-size: 3vw;
   }
@@ -366,7 +375,10 @@ video {
       align-items: center;
       padding: 0 45px;
       box-shadow:0 0 20px rgba(0,0,0,0.8);
-      box-shadow: 2px 4px 10px 4px #046B99;
+      /* box-shadow: 2px 4px 10px 4px #046B99; */
+  }
+  .contact:hover {
+    box-shadow: 2px 4px 10px 4px #046B99;
   }
   .port {
     display: grid;
