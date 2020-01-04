@@ -199,11 +199,22 @@ a.a1:hover {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
+.viewRecentGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+}
 .viewRecent {
   text-align: center;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow: 2px 4px 10px 4px #046B99;
+  object-fit: cover;
+  margin: 0 2rem;
+  border: 3px solid purple;
 }
 .viewRecent > p a {
-  border: 2px solid black;
   margin: 10px;
   padding: 12px 16px;
 }
@@ -357,7 +368,10 @@ video {
   }
 }
 @media (min-width: 48em){
- 
+  .viewRecentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .hello {
     font-size: 3vw;
   }
